@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+pydantic
+pytest
+pytest-cov
+coverage
+pyjwt
+flake8
+black
+isort
+python-dotenv
+python-jose
+passlib[bcrypt]
+httpx

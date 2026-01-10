@@ -1,0 +1,104 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Pip
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Virtual environments
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+*.pid
+
+# Documentation
+docs/_build/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Node modules (if any)
+node_modules/
+
+# Git
+.git
+.gitignore
+
+# Docker files (avoid recursive copying)
+docker-compose*.yml
+docker-compose*.yaml
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+
+# Reports and coverage
+bandit-report.json
+safety-report.json
+validation-report.md
+htmlcov/
+
+# Cache directories
+.cache/
+.mypy_cache/
+.pytest_cache/
+
+# Backup files
+*.bak
+*.backup
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Security and config files with secrets
+*.pem
+*.key
+*.crt
+config/secrets/
