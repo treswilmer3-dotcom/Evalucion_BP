@@ -23,4 +23,3 @@ docker run -d \
   devops-microservice
 
 echo "API instance ${node_number} configured"
-EOF

@@ -49,4 +49,3 @@ docker run -d \
   nginx:alpine
 
 echo "Load Balancer instance configured"
-EOF
