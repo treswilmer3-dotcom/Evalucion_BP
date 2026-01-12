@@ -78,7 +78,7 @@ resource "aws_lb_listener" "http" {
 
 # EC2 Instances
 resource "aws_instance" "load_balancer" {
-  ami                    = "ami-0c02fb55956c7d3165" # Amazon Linux 2023
+  ami                    = "ami-01c1b95fe5155c3b6" # Amazon Linux 2 ARM64
   instance_type          = var.instance_type
   subnet_id              = aws_subnet.public[0].id
   vpc_security_group_ids = [aws_security_group.ec2.id]
@@ -99,9 +99,9 @@ resource "aws_instance" "load_balancer" {
 
 resource "aws_instance" "api" {
   count                  = var.api_instance_count
-  ami                    = "ami-0c02fb55956c7d3165" # Amazon Linux 2023
+  ami                    = "ami-01c1b95fe5155c3b6" # Amazon Linux 2 ARM64
   instance_type          = var.instance_type
-  subnet_id              = aws_subnet.public[count.index + 1].id
+  subnet_id              = aws_subnet.public[count.index].id
   vpc_security_group_ids = [aws_security_group.ec2.id]
   key_name               = var.key_name
 
