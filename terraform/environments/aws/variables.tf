@@ -34,6 +34,18 @@ variable "key_name" {
   default     = "devops-key"
 }
 
+variable "docker_hub_username" {
+  description = "Docker Hub username"
+  type        = string
+  default     = "wilinvestiga"
+}
+
+variable "docker_image_tag" {
+  description = "Docker image tag"
+  type        = string
+  default     = "B1"
+}
+
 # Data source for availability zones
 data "aws_availability_zones" "available" {
   state = "available"

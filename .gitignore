@@ -192,3 +192,11 @@ performance-reports/
 # Backup files
 *.bak
 *.backup
+
+# SSH Keys - Security
+*.pem
+*.key
+*_key
+*_key.pub
+devops-key*
+pruebasvale5*
